@@ -1,5 +1,7 @@
 # URL
 # https://leetcode.com/problems/move-zeroes/description/
+#TODO: I need to solve this problem using 
+# two pointers, not by how I am doing it now
 
 def moveZeroes(nums: list[int]) -> list:
     zeroCount = []
