@@ -3,11 +3,7 @@
 
 
 def gcdOfStrings(str1: str, str2: str) -> str:
-    i = 0
-    j = 0    
-    
     return ""
-    
     
 print(f"Test 1: {gcdOfStrings("ABCABC","ABC") == "ABC"}")
 print(f"Test 2: {gcdOfStrings("ABABAB","ABAB") == "ABAB"}")
