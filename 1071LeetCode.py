@@ -4,7 +4,7 @@
 
 def gcdOfStrings(str1: str, str2: str) -> str:
     #TODO: To Complete this solution properly and pass all 
-    # tests, I need to find the gcd of string 1
+    # tests, I need to find the gcd of string 1.
     return ""
     
 print(f"Test 1: {gcdOfStrings("ABCABC","ABC") == "ABC"}")
