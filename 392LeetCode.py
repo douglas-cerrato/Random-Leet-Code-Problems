@@ -2,6 +2,8 @@
 # https://leetcode.com/problems/is-subsequence/description/
 
 def isSubsequence(s: str, t: str) -> bool:
+    if(s == ""): return True 
+    if(s != "" and t == ""): return False
     pointerOne = 0
     pointerTwo = 0
     
