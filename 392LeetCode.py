@@ -22,14 +22,21 @@ def isSubsequence(s: str, t: str) -> bool:
                 pointerOne+=1
                 pointerTwo+=1
                 break
-            print(f"pointerTwo is {pointerTwo} and len(t)-1 is {len(t)-1}")
-            if(pointerTwo == len(t)-1):
-                # We have hit the end of string t without finding a match 
-                return False
+            # print(f"pointerTwo is {pointerTwo} and len(t)-1 is {len(t)-1}")
+            # if(pointerTwo == len(t)-1):
+            #     # We have hit the end of string t without finding a match 
+            #     return False
+            
+            
             
             # Iterating through the next position in pointer Two
-            pointerTwo+=1
-            
-            
-print(f"Test 1: {isSubsequence("abc", "ahbgdc") == True}")
-print(f"Test 2: {isSubsequence("axc", "ahbgdc") == False}")
+            pointerTwo+=1          
+        print(f"pointerTwo is {pointerTwo} and len(t)-1 is {len(t)-1}")    
+        if(pointerTwo >= len(t)):
+            # We have hit the end of string t without finding a match 
+            return False
+        
+#print(f"Test 1: {isSubsequence("abc", "ahbgdc") == True}")
+#print(f"Test 2: {isSubsequence("axc", "ahbgdc") == False}")
+#print(f"Test 1: {isSubsequence("acb", "ahbgdc") == False}")
+print(f"Test 1: {isSubsequence("bcd", "uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuubcd") == True}")
